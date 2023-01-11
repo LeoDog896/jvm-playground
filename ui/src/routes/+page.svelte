@@ -5,7 +5,7 @@
 
 <Monaco value={Main} language={"java"}/>
 
-<style global>
+<style>
     :global(body, html) {
         padding: 0;
         margin: 0;
