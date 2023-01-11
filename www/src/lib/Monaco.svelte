@@ -4,6 +4,7 @@
 
     let container: HTMLDivElement;
     export let language: string;
+    export let value: string;
 
     onMount(() => {
         (globalThis as any).MonacoEnvironment = {
@@ -39,7 +40,7 @@
         };
 
         monaco.editor.create(container, {
-            value: "function hello() {\n\talert('Hello world!');\n}",
+            value,
             language
         });
     })

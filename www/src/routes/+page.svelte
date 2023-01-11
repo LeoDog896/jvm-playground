@@ -1,8 +1,9 @@
 <script lang="ts">
     import Monaco from "$lib/Monaco.svelte";
+    import Main from "$lib/Main.java?raw"
 </script>
 
-<Monaco language={"java"}/>
+<Monaco value={Main} language={"java"}/>
 
 <style global>
     :global(body, html) {
